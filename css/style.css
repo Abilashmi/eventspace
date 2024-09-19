@@ -1,3 +1,59 @@
+/* Ensure each container has equal height */
+.property-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background color for visibility */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Space inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    height: 100%; /* Ensure full height in the grid */
+}
+
+/* Hover effect */
+.property-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Flex container for equal height */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Ensure text and button alignment */
+.p-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+    height: 100%; /* Full height to align content properly */
+}
+
+/* Button styling */
+button {
+    background-color: #ee6262e3; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px auto; /* Center the button */
+    display: block; /* Ensure the button is block level for centering */
+}
+
+
+
+
+
+
+
+
+
 /********** Template CSS **********/
 :root {
     --primary: rgba(223, 101, 101, 0.3);
@@ -100,11 +156,11 @@
     transform: rotate(-180deg);
 }
 .navbar .nav-link {
-    color:var(--primary)
+    color:var(--dark)
 }
 
 .navbar .nav-link:hover {
-    color:var(--primary);
+    color:var(--dark);
     text-decoration: underline; /* Underline on hover */
 }
 
@@ -112,7 +168,7 @@
 .navbar-primary .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color:var(--primary);
+    color:var(--dark);
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -245,6 +301,62 @@
 
 
 /*** Category ***/
+/* Ensure each container has equal height */
+.cat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa; /* Light background color for visibility */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Space inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    height: 100%; /* Ensure full height in the grid */
+}
+
+.cat-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Flex container for equal height */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Ensure each box inside the row has equal height */
+.col-lg-4, .col-sm-6 {
+    display: flex;
+    align-items: stretch; /* Stretch items to full height */
+}
+
+/* Button styling */
+button {
+    background-color: #ee6262e3; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: auto; /* Push button to bottom of container */
+    display: inline-block; /* Ensure buttons align properly */
+}
+
+/* Optional: Adjust icon and text margins for uniform spacing */
+.icon {
+    margin-bottom: 1rem; /* Space between icon and text */
+}
+
+.cat-item p {
+    margin-bottom: 1rem; /* Space between paragraph and button */
+}
+
+
+
+
+
 .cat-item div {
     background: #FFFFFF;
     border: 1px dashed  rgba(236, 14, 14, 0.3);
@@ -262,6 +374,22 @@
 
 .cat-item:hover div * {
     color: #FFFFFF !important;
+}
+.cat-item button {
+    display: inline-block;
+    margin-top: 10px; /* Space between text and button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #ee6262e3; /* Button color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Centers text inside the button */
+}
+
+.cat-item button:hover {
+    background-color: #d54c4c; /* Darker shade for hover effect */
+    
 }
 
 
@@ -294,6 +422,7 @@
 .property-item .border-end {
     border-right: 1px dashed  rgba(236, 14, 14, 0.3) !important;
 }
+
 
 
 /*** Team ***/
@@ -443,7 +572,4 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-}
-.h {
-    font-family: Georgia, serif;
 }
