@@ -29,8 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    
-
+   
 </head>
 
 <body>
@@ -45,30 +44,39 @@
 
 
         <!-- Navbar Start -->
+         
         <div class="container-fluid nav-bar bg-transparent">
             <nav class="navbar navbar-expand-lg bg-white navbar-primary py-0 px-4">
                 <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                     <div class="p-2 me-2">
-                        <img  src="img/lanai anggun (1).jpg" style="width: 60px; height: 60px;">
+                        <img src="img/lanai anggun (1).jpg" alt="Brand Logo">
                     </div>
-                   
+                    
                 </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About us</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-
-                        
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="" class="btn btn-dark px-3 d-none d-lg-flex">Login</a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="service.html" class="nav-link">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <a id="openPopupBtn" class="btn btn-dark px-3 d-none d-lg-flex ms-lg-3">Login</a>
                 </div>
             </nav>
         </div>
+        
+        
         <!-- Navbar End -->
 
 
@@ -80,7 +88,7 @@
                     </h3>
                     <p class="animated fadeIn mb-4 pb-2">Pengurusan majlis profesional untuk perkahwinan, akad nikah, dan sambutan hari lahir. Sentuhan peribadi, lokasi eksklusif, dan perkhidmatan lengkap untuk majlis yang sempurna.
                     </p>
-                    <a href="" class="btn btn-dark py-3 px-5 me-3 animated fadeIn">Get Started</a>
+                    <a href="openPopupBtn" class="btn btn-dark py-3 px-5 me-3 animated fadeIn">Get Started</a>
                 </div>
                 <div class="col-md-6 animated fadeIn">
                     <div class="owl-carousel header-carousel">
@@ -130,7 +138,6 @@
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                    
-                  
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -139,12 +146,12 @@
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img/icons8-security-lock-50.png" alt="Icon">
                                 </div>
-                                <h5>Ruang Intim dan Eksklusif
-
-                                </h5>
+                                <h5>Ruang Intim dan Eksklusif </h5>
+                                <br>
+                               
                                 <p>"Lokasi yang direka khas untuk majlis bersama keluarga dan sahabat terdekat, menawarkan suasana mesra dan peribadi."
                                 </p>
-                                <br>
+                                
                             </div>
                         </a>
                     </div>
@@ -154,9 +161,10 @@
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img/fam frnds dining.png" alt="Icon">
                                 </div>
-                                <h5>Sajian Mesra Keluarga
-
-                                </h5>
+                                <h5>Sajian Mesra Keluarga </h5>
+                                <br>
+                                <br>
+                                
                                 <p>Hidangan disesuaikan untuk dinikmati bersama keluarga, disediakan oleh chef profesional dengan kualiti tinggi.
 
                                 </p>
@@ -169,9 +177,9 @@
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img/Flexible Packages for Small Events.png" alt="Icon">
                                 </div>
-                                <h5>Pakej Fleksibel untuk Majlis Kecil
-
-                                </h5>
+                                <h5>Pakej Fleksibel untuk Majlis Kecil  </h5>
+                                  <br>
+                                  
                                 <p>Pakej perkahwinan disusun khas untuk memenuhi keperluan majlis yang lebih kecil tetapi tetap eksklusif.
 
                                 </p>
@@ -184,9 +192,8 @@
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img/Full Amenities for Guest Comfort.png" alt="Icon">
                                 </div>
-                                <h5>Kemudahan Penuh untuk Keselesaan Tetamu
-
-                                </h5>
+                                <h5>Kemudahan Penuh untuk Keselesaan Tetamu </h5>
+                                
                                 <p>Fasiliti lengkap, dari tempat letak kenderaan, tandas, hingga ruang surau, semuanya disediakan untuk keselesaan tetamu anda.
 
                                 </p>
@@ -217,6 +224,7 @@
                         </p>
                         
                     </div>
+                
                 </div>
             </div>
         </div> 
@@ -265,53 +273,49 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h2 class="mb-3">Mengapa Pilih Kami?
-                        </h2>
-                   
+                    <h2 class="mb-3">Mengapa Pilih Kami?</h2>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                            <p></p>
+                        <div class="bg-white border rounded p-4 d-flex align-items-center justify-content-center flex-column">
+                             
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
                                     <h6 class="fw-bold mb-1">Lokasi Eksklusif:</h6>
                                     <small>Pilihan tempat acara yang memukau, sesuai untuk setiap jenis majlis.</small>
+                                    <br>
+                                    <br>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                           
+                        <div class="bg-white border rounded p-4 d-flex align-items-center justify-content-center flex-column">
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
                                     <h6 class="fw-bold mb-1">Perkhidmatan Profesional:</h6>
-                                    <small> Pasukan kami terdiri daripada perancang acara profesional yang memastikan semuanya berjalan lancar.
-                                    </small>
+                                    <small>Pasukan kami terdiri daripada perancang acara profesional yang memastikan semuanya berjalan lancar.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                           
+                        <div class="bg-white border rounded p-4 d-flex align-items-center justify-content-center flex-column">
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Rekaan Majlis Terkini: </h6>
-                                    <small> Kami mengikuti trend terkini untuk memberikan sentuhan moden dan elegan kepada acara anda.
-                                    </small>
+                                    <h6 class="fw-bold mb-1">Rekaan Majlis Terkini:</h6>
+                                    <small>Kami mengikuti trend terkini untuk memberikan sentuhan moden dan elegan kepada acara anda.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
+        
         <!-- Testimonial End -->
         
 
@@ -347,7 +351,7 @@
                     
                 </div>
             </div>
-            <div class="container">
+            <div class="container">     
                 <div class="row justify-content-center">
                     <div class="col-auto text-center">
                         <p>&copy; 2024 Your Company. All rights reserved.</p>
@@ -356,13 +360,132 @@
             </div>
         </div>
         
+
+        
         <!-- Footer End -->
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <a href="#" class="btn  btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
+    <button id="openPopupBtn">Register for Booking</button>
+
+    <div id="popup-box" class="modal">    
+        <div class="content1">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h1>Get In Touch</h1>
+            <form class="needs-validation" method="post" id="popup-form" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" name="Name" required>
+                <span class="error-message" id="name-error">Please enter your name.</span>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email" name="Email" required>
+                <span class="error-message" id="email-error">Please enter a valid email address.</span>
+    
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter Your Phone Number" name="Mobile" minlength="10" maxlength="10" required>
+                <span class="error-message" id="phone-error">Please enter a valid phone number with 10 digits.</span>
+    
+                <label for="date">Date</label>
+                <input type="date" id="date" name="Date" required>
+    
+                <label for="edate">edate</label>
+                <input type="date" id="edate" name="edate" required>
+    
+                <label for="eventType">Event Type</label>
+                <select id="eventType" name="EventType" required>
+                    <option value="" disabled selected>Select Event Type</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Celebration">Celebration</option>
+                </select>
+    
+                <button type="submit" id="submitButton" style="width: 150px;height: 50px;">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('popup-box');
+        const closeModal = document.getElementById('closeModal');
+        const openPopupBtn = document.getElementById('openPopupBtn');
+    
+        // Open the modal
+        openPopupBtn.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+    
+        // Close the modal
+        closeModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.style.display = 'none';
+        });
+    
+        // Optional: Close modal when clicking outside of the content
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    
+        // Form validation
+        const form = document.getElementById('popup-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            let isValid = true;
+    
+            // Clear previous error messages
+            document.querySelectorAll('.error-message').forEach(msg => msg.style.display = 'none');
+    
+            // Validate name
+            const name = document.getElementById('name');
+            if (!name.value.trim()) {
+                document.getElementById('name-error').style.display = 'block';
+                isValid = false;
+            }
+    
+            // Validate email
+            const email = document.getElementById('email');
+            if (!email.validity.valid) {
+                document.getElementById('email-error').style.display = 'block';
+                isValid = false;
+            }
+    
+            // Validate phone
+            const phone = document.getElementById('phone');
+            if (!phone.value.trim() || phone.value.length !== 10) {
+                document.getElementById('phone-error').style.display = 'block';
+                isValid = false;
+            }
+    
+            // If the form is valid, submit
+            if (isValid) {
+                const formData = new FormData(form);
+                try {
+                    const response = await fetch("https://script.google.com/macros/s/AKfycbxTZITb-PHElvMwhsI0rBkjDkaKXYcGfdchvGzarrfURx_8TqS016FXUMTCrLzK0PF17A/exec", {
+                        method: 'POST',
+                        body: formData
+                    });
+                    const data = await response.json();
+                    if (data.result === "success") {
+                        alert('Form submitted successfully!');
+                        modal.style.display = 'none';
+                        form.reset();
+                    } else {
+                        alert('Submission failed. Please try again.');
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+        });
+    });
+    </script>
+
+     
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -370,6 +493,8 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
