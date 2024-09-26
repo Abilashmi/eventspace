@@ -42,31 +42,39 @@
         <!-- Spinner End -->
 
 
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-bar bg-transparent">
-            <nav class="navbar navbar-expand-lg bg-white navbar-primary py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <div class=" p-2 me-2">
-                        <img  src="img/lanai anggun (1).jpg"  style="width: 60px; height: 60px;">
-                    </div>
-                    
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About us</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a  id="openPopupBtn" class="btn btn-dark px-3 d-none d-lg-flex">Login</a>
-                </div>
-                <div>
-            </nav>
+               
+      
+<div class="container-fluid nav-bar bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-primary py-0 px-4 bg-white">
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+            <div class="p-2 me-2">
+                <img src="img/lanai anggun (1).jpg" alt="Brand Logo">
+            </div>
+          
+        </a>
+        
+        <!-- Hamburger button -->
+        <button  style="width: 100px;  margin: 0; hover:none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" style="border: ">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="service.html" class="nav-link">Service</a>
+                </li>
+            </ul>
+            <a href="#popup-box" class="openPopupLink btn btn-dark px-3 d-none d-lg-flex ms-lg-3">Book Now</a>
         </div>
+    </nav>
+</div>
+        
         <!-- Navbar End -->
          
        <!-- Header Start -->
@@ -75,13 +83,13 @@
         <div class="col-md-6 p-5 mt-lg-5">
             <h2 class="display-6 animated fadeIn mb-4">Perkhidmatan Pakej Lengkap untuk Pelbagai Acara</h2>
             <p class="animated fadeIn mb-4 pb-2">Kami menyediakan pakej lengkap yang memenuhi keperluan pelbagai jenis acara anda, dari majlis pernikahan, perkahwinan, akikah, sambutan hari lahir, hingga acara korporat seperti meet and greet. Setiap pakej disesuaikan dengan tema dan keperluan pelanggan untuk memastikan acara anda berjalan dengan lancar dan penuh kenangan.</p>
-            <a href="" class="btn btn-dark py-3 px-5 me-3 animated fadeIn">Ketahui Lebih Lanjut
+            <a  href="#popup-box" class=" openPopupLink btn btn-dark py-3 px-5 me-3 animated fadeIn">Ketahui Lebih Lanjut
             </a>
         </div>
         <div class="col-md-6 animated fadeIn">
             <div class="owl-carousel header-carousel">
                 <div class="owl-carousel-item">
-                    <img class="img-fluid" src="img/malay walll.jpg" alt="">
+                    <img class="img-fluid" src="img/malay wall.jpg" alt="" style="height: 711px;">
                 </div>
                 <div class="owl-carousel-item">
                     <img class="img-fluid" src="img/malay wall.jpg" alt=""style="height: 711px;">
@@ -184,221 +192,207 @@
 
    
 
-     
+        
 
 
 
-        <!-- Property List Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-0 gx-5 align-items-end">
-                    <div class="col-lg-6">
-                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                            
-                            
+            <!-- Property List Start -->
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-0 gx-5 align-items-end">
+                        <div class="col-lg-6">
+                            <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                                
+                                
+                            </div>
                         </div>
+                    
                     </div>
-                   
-                </div>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane fade show p-0 active">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/engagement.jpg" alt=""></a>
-                                    </div>
-                                    <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
-                                        <a class="d-block h5 mb-2" href=""> Perkahwinan</a>
-                                        <br>
-                                        <p>Pakej  perkahwinan kami merangkumi:
-                                        </p>
-                                        <ul style="text-align: left;">
-                                            <li>Penyediaan tempat (indoor atau outdoor) </li>
-                                            <li>Dekorasi pelamin dan dewan</li>
-                                            <li>Persembahan muzik dan hiburan</li>
-                                            <li>Hidangan katering eksklusif dengan pilihan menu tempatan dan antarabangsa
-                                            </li>
-                                            <li>Penyediaan bilik pengantin
-                                            </li>
-                                        </ul>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <a href="pdf/converted pdf3.pdf" download="" class="download-btn" style >
-                                            Lihat Pakej
-                                        </a>
-                                        
-
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/newborn.jpg" alt="" style="height: 250px;width:330px;"></a>
-                                    </div>
-                                    <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
-                                        <a class="d-block h5 mb-2" href="">Majlis Akikah</a>
-                                        <br>
-                                        <p>Pakej akikah kami meliputi:
-                                        </p>
-                                        <ul style="text-align: left;">
-                                            <li>Penyediaan tempat dan dekorasi bertemakan akikah</li>
-                                            <li>Penyembelihan dan hidangan kambing akikah</li>
-                                            <li>Penganjuran majlis doa selamat bersama ustaz jemputan </li>
-                                            <li>Hidangan katering yang sesuai untuk tetamu pelbagai peringkat umur</li>
-                                           
-                                        </ul>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <a href="pdf/Majlis akikah pdf.pdf" download="" class="download-btn" style >
-                                            Lihat Pakej
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/corporate event.jpg" alt="" ></a>
-                                    </div>
-                                    <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
-                                        <a class="d-block h5 mb-2" href=""> Acara Korporat</a>
-                                        <br>
-                                        <p>Tempat dan Hiasan-Penyewaan ruang dan hiasan sesuai tema acara.
-                                        </p>
-                                        <ul style="text-align: left;">
-                                            <li>Perkhidmatan Katering-makanan dan minuman untuk tetamu,termasuk pilihan buffet atau hidangan.</li>
-                                            <li>peralatan Audiovisual-penyewaan peralatan seperti projektor,sistem suara,dan pencahayaan.</li>
-                                            <li>Pengacara Majlis-Perkhidmatan pengacara untuk mengendalikan acara. </li>
-                                            <li>Documentasi-Fotografi dan videografi untuk merakam momen penting acara.</li>
-                                           
-                                        </ul>
-                                        <br>
-                                        <a href="pdf/corporate event pdf.pdf" download="" class="download-btn" style >
-                                            Lihat Pakej
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/weddinggg.jpg" alt="" style="height: 250px;width:330px;"></a>
-                                    </div>
-                                    <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
-                                        <a class="d-block h5 mb-2" href="">Pernikahan</a>
-                                        <br>
-                                        <p>Tempat dan Hiasan-hiasan mini pelamin untuk akad nikah:
-                                        </p>
-                                        <ul style="text-align: left;">
-                                            <li>Katering Ringkas- Hidangan ringan atau jamuan kecil untuk tetamu.</li>
-                                            <li> Dokumentasi- Fotografi dan Videografi untuk majlis akad.
-                                            </li>
-                                            <li>Solekan & Pakaian Pengantin-Solekan Pengantin dan busana untuk akad nikah.
-                                            </li>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <a href=""><img class="img-fluid" src="img/engagement.jpg" alt=""style="height: 250px;width:330px;"></a>
+                                        </div>
+                                        <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
+                                            <a class="d-block h5 mb-2" href=""> Perkahwinan</a>
+                                            <br>
+                                            <p>Pakej  perkahwinan kami merangkumi:
+                                            </p>
+                                            <ul style="text-align: left;">
+                                                <li>Penyediaan tempat (indoor atau outdoor) </li>
+                                                <li>Dekorasi pelamin dan dewan</li>
+                                                <li>Persembahan muzik dan hiburan</li>
+                                                <li>Hidangan katering eksklusif dengan pilihan menu tempatan dan antarabangsa
+                                                </li>
+                                                <li>Penyediaan bilik pengantin
+                                                </li>
                                             </ul>
-                                        <br>
-                                        <br>
-                                        <a href="pdf/pernikahan.pdf" download="" class="download-btn" style >
-                                            Lihat Pakej
-                                        </a>
+                 
+                                            <a href="pdf/converted pdf3.pdf" download="" class="download-btn btn btn-primary "  style="margin-top:10;">
+                                                Lihat Pakej
+                                            </a>
+                                            
+
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-
-
-                            
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/birthday1.jpg" alt="" style="height: 250px;width:330px;"></a>
-                                    </div>
-                                    <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
-                                        <a class="d-block h5 mb-2" href="">Sambutan Hari Lahir</a>
-                                        <br>
-                                        <p>Untuk sambutan hari lahir, kami menyediakan:
-                                        </p>
-                                        <ul style="text-align: left;">
-                                            <li>Tema sambutan yang disesuaikan
-                                            </li>
-                                            <li>Dekorasi tempat majlis dengan hiasan menarik
-                                            </li>
-                                            <li> Kek hari lahir khas dengan rekaan unik
-                                            </li>
-                                            <li>Hiburan untuk kanak-kanak seperti badut dan permainan
-                                            </li>
-                                            <li>Hidangan katering yang beraneka
-                                            </li>
-                                           
-                                        </ul>
-                                        <br>
-                                        <br>
-                                        <a href="pdf/sambutan.pdf" download="" class="download-btn"  >
-                                            Lihat Pakej
-                                        </a>
+                                
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <a href=""><img class="img-fluid" src="img/newborn.jpg" alt="" style="height: 250px;width:330px;"></a>
+                                        </div>
+                                        <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
+                                            <a class="d-block h5 mb-2" href="">Majlis Akikah</a>
+                                            <br>
+                                            <p>Pakej akikah kami meliputi:
+                                            </p>
+                                            <ul style="text-align: left;">
+                                                <li>Penyediaan tempat dan dekorasi bertemakan akikah</li>
+                                                <li>Penyembelihan dan hidangan kambing akikah</li>
+                                                <li>Penganjuran majlis doa selamat bersama ustaz jemputan </li>
+                                                <li>Hidangan katering yang sesuai untuk tetamu pelbagai peringkat umur</li>
+                                            
+                                            </ul>
+                                
+                                            <a href="pdf/Majlis akikah pdf.pdf" download="" class="download-btn" style="margin-top:10;" >
+                                                Lihat Pakej
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            
 
-
-
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/meet anf greet.jpg" alt="" style="height: 250px;width:330px;"></a>
-                                    </div>
-                                    <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
-                                        <a class="d-block h5 mb-2" href="">Acara Meet and Greet</a>
-                                        <br>
-                                        <p>Untuk acara meet and greet, kami menyediakan:
-                                        </p>
-                                        <ul style="text-align: left;">
-                                            <li>Penyediaan tempat yang eksklusif</li>
-                                            <li> Pengurusan acara yang profesional termasuk jadual acara dan protokol
-                                            </li>
-                                            <li>Hidangan katering yang lengkap dengan pelbagai pilihan hidangan
-                                            </li>
-                                           
-                                           
-                                        </ul>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <a href="path-to-your-file.pdf" download="" class="download-btn" style >
-                                            Lihat Pakej
-                                        </a>
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <a href=""><img class="img-fluid" src="img/corporate event.jpg" alt="" style="height: 250px;width:330px;"></a>
+                                        </div>
+                                        <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
+                                            <a class="d-block h5 mb-2" href=""> Acara Korporat</a>
+                                            <br>
+                                            <p>Tempat dan Hiasan-Penyewaan ruang dan hiasan sesuai tema acara.
+                                            </p>
+                                            <ul style="text-align: left; margin-bottom: 20%;" >
+                                                <li>Perkhidmatan Katering-makanan dan minuman untuk tetamu,termasuk pilihan buffet atau hidangan.</li>
+                                                <li>peralatan Audiovisual-penyewaan peralatan seperti projektor,sistem suara,dan pencahayaan.</li>
+                                                <li>Pengacara Majlis-Perkhidmatan pengacara untuk mengendalikan acara. </li>
+                                                <li>Documentasi-Fotografi dan videografi untuk merakam momen penting acara.</li>
+                                            
+                                            </ul>
+                                        
+                                            <a href="pdf/corporate event pdf.pdf" download="" class="download-btn" style="margin-top: 10%;"     >
+                                                Lihat Pakej
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <br>
-                            <br>
-                            
-                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                                <a class="btn btn-dark py-3 px-5 " href="">Lihat Acara-Acara Lain</a>
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <a href=""><img class="img-fluid" src="img/weddinggg.jpg" alt="" style="height: 250px;width:330px;"></a>
+                                        </div>
+                                        <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
+                                            <a class="d-block h5 mb-2" href="">Pernikahan</a>
+                                            <br>
+                                            <p>Tempat dan Hiasan-hiasan mini pelamin untuk akad nikah:
+                                            </p>
+                                            <ul style="text-align: left;">
+                                                <li>Katering Ringkas- Hidangan ringan atau jamuan kecil untuk tetamu.</li>
+                                                <li> Dokumentasi- Fotografi dan Videografi untuk majlis akad.
+                                                </li>
+                                                <li>Solekan & Pakaian Pengantin-Solekan Pengantin dan busana untuk akad nikah.
+                                                </li>
+                                                </ul>
+                                        
+                                            <a href="pdf/pernikahan.pdf" download="" class="download-btn" style >
+                                                Lihat Pakej
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+
+                                
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <a href=""><img class="img-fluid" src="img/birthday1.jpg" alt="" style="height: 250px;width:330px;"></a>
+                                        </div>
+                                        <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
+                                            <a class="d-block h5 mb-2" href="">Sambutan Hari Lahir</a>
+                                            <br>
+                                            <p>Untuk sambutan hari lahir, kami menyediakan:
+                                            </p>
+                                            <ul style="text-align: left; margin-bottom: 20%;">
+                                                <li>Tema sambutan yang disesuaikan
+                                                </li>
+                                                <li>Dekorasi tempat majlis dengan hiasan menarik
+                                                </li>
+                                                <li> Kek hari lahir khas dengan rekaan unik
+                                                </li>
+                                                <li>Hiburan untuk kanak-kanak seperti badut dan permainan
+                                                </li>
+                                                <li>Hidangan katering yang beraneka
+                                                </li>
+                                            
+                                            </ul>
+                                    
+                                            <a href="pdf/sambutan.pdf" download="" class="download-btn mt-3" >
+                                                Lihat Pakej
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+
+
+
+                                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="property-item rounded overflow-hidden">
+                                        <div class="position-relative overflow-hidden">
+                                            <a href=""><img class="img-fluid" src="img/meet anf greet.jpg" alt="" style="height: 250px;width:330px;"></a>
+                                        </div>
+                                        <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
+                                            <a class="d-block h5 mb-2" href="">Acara Meet and Greet</a>
+                                            <br>
+                                            <p>Untuk acara meet and greet, kami menyediakan:
+                                            </p>
+                                            <ul style="text-align: left;">
+                                                <li>Penyediaan tempat yang eksklusif</li>
+                                                <li> Pengurusan acara yang profesional termasuk jadual acara dan protokol
+                                                </li>
+                                                <li>Hidangan katering yang lengkap dengan pelbagai pilihan hidangan
+                                                </li>
+                                            
+                                            
+                                            </ul>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <a href="path-to-your-file.pdf" download="" class="download-btn" style >
+                                                Lihat Pakej
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                    
+                                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                    <a class="btn btn-dark py-3 px-5 openPopupLink" href="#popup-box"  >Lihat Acara-Acara Lain</a>
+                                </div>
                             </div>
                         </div>
+                    
                     </div>
-                   
                 </div>
             </div>
-        </div>
-        <!-- Property List End -->
+            <!-- Property List End -->
 
 
 
@@ -420,36 +414,26 @@
                         
                         <h5 class="text-white mb-4">Follow Us</h5>
                         <div class="d-flex justify-content-center pt-2"> <!-- Center the social icons -->
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        
+                            <a class="btn btn-outline-light btn-social mx-2" href="https://www.facebook.com/profile.php?id=100056417901302"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-2" href="https://www.instagram.com/lanaianggunecosky/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>    
                     </div>
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center"> <!-- Center the column -->
-                        <h5 class="text-white mb-4 text-center">Quick Links</h5> <!-- Center the heading -->
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Home</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="#about">About Us</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Service</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Contact</a>
+                        <h5 class="text-white mb-4 text-center">Address</h5> <!-- Center the heading -->
+                        <p class="text-white">Lot 21-2 Ecosky, Jln Kuching, Taman Wahyu, 51200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
                     </div>
                     
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center"> <!-- Center the column -->
                         <h5 class="text-white mb-4 text-center">Quick Links</h5> <!-- Center the heading -->
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Home</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="#about">About Us</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Service</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Contact</a>
+                        <a class=" btn-link text-white d-block text-center" href="">Home</a>
+                        <a class=" btn-link text-white d-block text-center" href="#about">About Us</a>
+                        <a class=" btn-link text-white d-block text-center" href="">Service</a>
+                        <a class=" btn-link text-white d-block text-center" href="">Contact</a>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-auto text-center">
-                        <p>&copy; 2024 Your Company. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
+         
         </div>
         
         <!-- Footer End -->
@@ -459,120 +443,120 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
    
+  <!-- Modal -->
+  <div id="popup-box" class="modal">    
+    <div class="content1">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h1>Get In Touch</h1>
+        <form class="needs-validation" method="post" id="popup-form" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name" name="Name" required>
+            <span class="error-message" id="name-error">Please enter your name.</span>
 
-    <div id="popup-box" class="modal">    
-        <div class="content1">
-            <span class="close-button" id="closeModal">&times;</span>
-            <h1>Get In Touch</h1>
-            <form class="needs-validation" method="post" id="popup-form" novalidate>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter Your Name" name="Name" required>
-                <span class="error-message" id="name-error">Please enter your name.</span>
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter Your Email" name="Email" required>
-                <span class="error-message" id="email-error">Please enter a valid email address.</span>
-    
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="Enter Your Phone Number" name="Mobile" minlength="10" maxlength="10" required>
-                <span class="error-message" id="phone-error">Please enter a valid phone number with 10 digits.</span>
-    
-                <label for="date">Date</label>
-                <input type="date" id="date" name="Date" required>
-    
-                <label for="edate">edate</label>
-                <input type="date" id="edate" name="edate" required>
-    
-                <label for="eventType">Event Type</label>
-                <select id="eventType" name="EventType" required>
-                    <option value="" disabled selected>Select Event Type</option>
-                    <option value="Birthday">Birthday</option>
-                    <option value="Wedding">Wedding</option>
-                    <option value="Celebration">Celebration</option>
-                </select>
-    
-                <button type="submit" id="submitButton" style="width: 150px;height: 50px;">Submit</button>
-            </form>
-        </div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email" name="Email" required>
+            <span class="error-message" id="email-error">Please enter a valid email address.</span>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter Your Phone Number" name="Mobile" minlength="10" maxlength="10" required>
+            <span class="error-message" id="phone-error">Please enter a valid phone number with 10 digits.</span>
+
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="eventdate" required>
+
+
+            <label for="eventType">Event Type</label>
+            <select id="eventType" name="EventType" required>
+                <option value="" disabled selected>Select Event Type</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Celebration">Celebration</option>
+            </select>
+
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
     </div>
-    
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const modal = document.getElementById('popup-box');
-        const closeModal = document.getElementById('closeModal');
-        const openPopupBtn = document.getElementById('openPopupBtn');
-    
-        // Open the modal
-        openPopupBtn.addEventListener('click', () => {
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('popup-box');
+    const closeModal = document.getElementById('closeModal');
+    const openPopupLinks = document.querySelectorAll('.openPopupLink');
+
+    // Open the modal
+    openPopupLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor link behavior
             modal.style.display = 'flex';
         });
-    
-        // Close the modal
-        closeModal.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.style.display = 'none';
-        });
-    
-        // Optional: Close modal when clicking outside of the content
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    
-        // Form validation
-        const form = document.getElementById('popup-form');
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            let isValid = true;
-    
-            // Clear previous error messages
-            document.querySelectorAll('.error-message').forEach(msg => msg.style.display = 'none');
-    
-            // Validate name
-            const name = document.getElementById('name');
-            if (!name.value.trim()) {
-                document.getElementById('name-error').style.display = 'block';
-                isValid = false;
-            }
-    
-            // Validate email
-            const email = document.getElementById('email');
-            if (!email.validity.valid) {
-                document.getElementById('email-error').style.display = 'block';
-                isValid = false;
-            }
-    
-            // Validate phone
-            const phone = document.getElementById('phone');
-            if (!phone.value.trim() || phone.value.length !== 10) {
-                document.getElementById('phone-error').style.display = 'block';
-                isValid = false;
-            }
-    
-            // If the form is valid, submit
-            if (isValid) {
-                const formData = new FormData(form);
-                try {
-                    const response = await fetch("https://script.google.com/macros/s/AKfycbxTZITb-PHElvMwhsI0rBkjDkaKXYcGfdchvGzarrfURx_8TqS016FXUMTCrLzK0PF17A/exec", {
-                        method: 'POST',
-                        body: formData
-                    });
-                    const data = await response.json();
-                    if (data.result === "success") {
-                        alert('Form submitted successfully!');
-                        modal.style.display = 'none';
-                        form.reset();
-                    } else {
-                        alert('Submission failed. Please try again.');
-                    }
-                } catch (error) {
-                    alert('An error occurred: ' + error.message);
-                }
-            }
-        });
     });
-    </script>
+
+    // Close the modal
+    closeModal.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.style.display = 'none';
+    });
+
+    // Optional: Close modal when clicking outside of the content
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Form validation
+    const form = document.getElementById('popup-form');
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        let isValid = true;
+
+        // Clear previous error messages
+        document.querySelectorAll('.error-message').forEach(msg => msg.style.display = 'none');
+
+        // Validate name
+        const name = document.getElementById('name');
+        if (!name.value.trim()) {
+            document.getElementById('name-error').style.display = 'block';
+            isValid = false;
+        }
+
+        // Validate email
+        const email = document.getElementById('email');
+        if (!email.validity.valid) {
+            document.getElementById('email-error').style.display = 'block';
+            isValid = false;
+        }
+
+        // Validate phone
+        const phone = document.getElementById('phone');
+        if (!phone.value.trim() || phone.value.length !== 10) {
+            document.getElementById('phone-error').style.display = 'block';
+            isValid = false;
+        }
+
+        // If the form is valid, submit
+        if (isValid) {
+            const formData = new FormData(form);
+            try {
+                const response = await fetch("https://script.google.com/macros/s/AKfycbxTZITb-PHElvMwhsI0rBkjDkaKXYcGfdchvGzarrfURx_8TqS016FXUMTCrLzK0PF17A/exec", {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                if (data.result === "success") {
+                    form.reset();
+                    window.location.href = 'thankyou.html';
+                } else {
+                    alert('Submission failed. Please try again.');
+                }
+            } catch (error) {
+                alert('An error occurred: ' + error.message);
+            }
+        }
+    });
+});
+</script>
 
 
 

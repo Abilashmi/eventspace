@@ -45,36 +45,37 @@
 
         <!-- Navbar Start -->
          
-        <div class="container-fluid nav-bar bg-transparent">
-            <nav class="navbar navbar-expand-lg bg-white navbar-primary py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <div class="p-2 me-2">
-                        <img src="img/lanai anggun (1).jpg" alt="Brand Logo">
-                    </div>
-                    
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="service.html" class="nav-link">Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                    <a id="openPopupBtn" class="btn btn-dark px-3 d-none d-lg-flex ms-lg-3">Login</a>
-                </div>
-            </nav>
+      
+<div class="container-fluid nav-bar bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-primary py-0 px-4 bg-white">
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+            <div class="p-2 me-2">
+                <img src="img/lanai anggun (1).jpg" alt="Brand Logo">
+            </div>
+          
+        </a>
+        
+        <!-- Hamburger button -->
+        <button  style="width: 100px;  margin: 0; hover:none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" style="border: ">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="service.html" class="nav-link">Service</a>
+                </li>
+            </ul>
+            <a href="#popup-box" class="openPopupLink btn btn-dark px-3 d-none d-lg-flex ms-lg-3">Book Now</a>
         </div>
+    </nav>
+</div>
         
         
         <!-- Navbar End -->
@@ -88,7 +89,7 @@
                     </h3>
                     <p class="animated fadeIn mb-4 pb-2">Pengurusan majlis profesional untuk perkahwinan, akad nikah, dan sambutan hari lahir. Sentuhan peribadi, lokasi eksklusif, dan perkhidmatan lengkap untuk majlis yang sempurna.
                     </p>
-                    <a href="openPopupBtn" class="btn btn-dark py-3 px-5 me-3 animated fadeIn">Ketahui Lebih Lanjut</a>
+                    <a href="#popup-box" class=" openPopupLink btn btn-dark py-3 px-5 me-3 animated fadeIn">Ketahui Lebih Lanjut</a>
                 </div>
                 <div class="col-md-6 animated fadeIn">
                     <div class="owl-carousel header-carousel">
@@ -351,47 +352,38 @@
         
 
         <!-- Footer Start -->
+       
+        <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5 justify-content-center text-center"> <!-- Center the row and text -->
                     <div class="col-lg-3 col-md-6">
-                        <img src="img/lanai anggun.png" style="width: 100px;">
+                        <img src="img/lanai anggun.png" style="width: 100px; ">
                         <br><br>
+                        
                         <h5 class="text-white mb-4">Follow Us</h5>
                         <div class="d-flex justify-content-center pt-2"> <!-- Center the social icons -->
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                        
+                            <a class="btn btn-outline-light btn-social mx-2" href="https://www.facebook.com/profile.php?id=100056417901302"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-2" href="https://www.instagram.com/lanaianggunecosky/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>    
                     </div>
                     <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center"> <!-- Center the column -->
-                        <h5 class="text-white mb-4 text-center">Quick Links</h5> <!-- Center the heading -->
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Home</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="#about">About Us</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Service</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Contact</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center"> <!-- Center the column -->
-                        <h5 class="text-white mb-4 text-center">Quick Links</h5> <!-- Center the heading -->
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Home</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="#about">About Us</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Service</a>
-                        <a class=" btn-link text-white-50 d-block text-center" href="">Contact</a>
+                        <h5 class="text-white mb-4 text-center">Address</h5> <!-- Center the heading -->
+                        <p class="text-white">Lot 21-2 Ecosky, Jln Kuching, Taman Wahyu, 51200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
                     </div>
                     
-                </div>
-            </div>
-            <div class="container">     
-                <div class="row justify-content-center">
-                    <div class="col-auto text-center">
-                        <p>&copy; 2024 Your Company. All rights reserved.</p>
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center"> <!-- Center the column -->
+                        <h5 class="text-white mb-4 text-center">Quick Links</h5> <!-- Center the heading -->
+                        <a class=" btn-link text-white d-block text-center" href="">Home</a>
+                        <a class=" btn-link text-white d-block text-center" href="#about">About Us</a>
+                        <a class=" btn-link text-white d-block text-center" href="">Service</a>
+                        <a class=" btn-link text-white d-block text-center" href="">Contact</a>
                     </div>
                 </div>
             </div>
+          
         </div>
-        
-
         
         <!-- Footer End -->
 
@@ -400,8 +392,7 @@
         <a href="#" class="btn  btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-   
-
+    <!-- Modal -->
     <div id="popup-box" class="modal">    
         <div class="content1">
             <span class="close-button" id="closeModal">&times;</span>
@@ -410,21 +401,19 @@
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Enter Your Name" name="Name" required>
                 <span class="error-message" id="name-error">Please enter your name.</span>
-    
+
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Enter Your Email" name="Email" required>
                 <span class="error-message" id="email-error">Please enter a valid email address.</span>
-    
+
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" placeholder="Enter Your Phone Number" name="Mobile" minlength="10" maxlength="10" required>
                 <span class="error-message" id="phone-error">Please enter a valid phone number with 10 digits.</span>
-    
-                <label for="date">Date</label>
-                <input type="date" id="date" name="Date" required>
-    
-                <label for="edate">edate</label>
-                <input type="date" id="edate" name="edate" required>
-    
+
+                <label for="date">Event Date</label>
+                <input type="date" id="date" name="eventdate" required>
+
+        
                 <label for="eventType">Event Type</label>
                 <select id="eventType" name="EventType" required>
                     <option value="" disabled selected>Select Event Type</option>
@@ -432,66 +421,69 @@
                     <option value="Wedding">Wedding</option>
                     <option value="Celebration">Celebration</option>
                 </select>
-    
-                <button type="submit" id="submitButton" style="width: 150px;height: 50px;">Submit</button>
+
+                <button type="submit" id="submitButton">Submit</button>
             </form>
         </div>
     </div>
-    
+
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         const modal = document.getElementById('popup-box');
         const closeModal = document.getElementById('closeModal');
-        const openPopupBtn = document.getElementById('openPopupBtn');
-    
+        const openPopupLinks = document.querySelectorAll('.openPopupLink');
+
         // Open the modal
-        openPopupBtn.addEventListener('click', () => {
-            modal.style.display = 'flex';
+        openPopupLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default anchor link behavior
+                modal.style.display = 'flex';
+            });
         });
-    
+
         // Close the modal
         closeModal.addEventListener('click', (e) => {
             e.preventDefault();
             modal.style.display = 'none';
         });
-    
+
         // Optional: Close modal when clicking outside of the content
         modal.addEventListener('click', (e) => {
             if (e.target === modal) {
                 modal.style.display = 'none';
             }
         });
-    
+
         // Form validation
         const form = document.getElementById('popup-form');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             let isValid = true;
-    
+
             // Clear previous error messages
             document.querySelectorAll('.error-message').forEach(msg => msg.style.display = 'none');
-    
+
             // Validate name
             const name = document.getElementById('name');
             if (!name.value.trim()) {
                 document.getElementById('name-error').style.display = 'block';
                 isValid = false;
             }
-    
+
             // Validate email
             const email = document.getElementById('email');
             if (!email.validity.valid) {
                 document.getElementById('email-error').style.display = 'block';
                 isValid = false;
             }
-    
+
             // Validate phone
             const phone = document.getElementById('phone');
             if (!phone.value.trim() || phone.value.length !== 10) {
                 document.getElementById('phone-error').style.display = 'block';
                 isValid = false;
             }
-    
+
             // If the form is valid, submit
             if (isValid) {
                 const formData = new FormData(form);
@@ -502,9 +494,8 @@
                     });
                     const data = await response.json();
                     if (data.result === "success") {
-                        alert('Form submitted successfully!');
-                        modal.style.display = 'none';
                         form.reset();
+                        window.location.href = 'thankyou.html';
                     } else {
                         alert('Submission failed. Please try again.');
                     }
@@ -514,31 +505,8 @@
             }
         });
     });
-
-
-    function playVideo(videoItem, videoSrc) {
-            // Pause and hide all videos
-            document.querySelectorAll('.video-item').forEach(item => {
-                const video = item.querySelector('video');
-                if (video) {
-                    video.pause();
-                    video.style.display = 'none'; // Hide video
-                    item.classList.remove('playing');
-                }
-            });
-    
-            // Show the selected video
-            const selectedVideo = videoItem.querySelector('video');
-            const thumbnail = videoItem.querySelector('img');
-    
-            if (selectedVideo) {
-                selectedVideo.style.display = 'block'; // Show video
-                selectedVideo.src = videoSrc;
-                selectedVideo.play(); // Start playing the video
-                videoItem.classList.add('playing');
-            }
-        }
     </script>
+
 
      
     <!-- JavaScript Libraries -->
