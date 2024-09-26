@@ -248,9 +248,62 @@ button {
     }
 
     .navbar-primary .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+     text-align: center;
     }
 }
+/* Custom Toggler Style */
+.navbar-toggler {
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding for better alignment */
+}
+
+/* Customize the icon */
+.navbar-toggler-icon {
+    width: 30px; /* Width of the icon */
+    height: 3px; /* Height of each line */
+    background-color: #ee6262e3; /* Color of the lines */
+    display: inline-block; /* Ensure it behaves as an inline block */
+    position: relative; /* Position relative for pseudo-elements */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Additional lines for the hamburger icon */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: ''; /* Create pseudo-elements */
+    display: block; /* Make them block elements */
+    width: 30px; /* Width of the lines */
+    height: 3px; /* Height of each line */
+    background-color: #ee6262e3; /* Customize color */
+    position: absolute; /* Position absolute */
+    left: 0; /* Align to left */
+    transition: all 0.3s; /* Smooth transition */
+}
+
+/* Positioning the additional lines */
+.navbar-toggler-icon::before {
+    top: -8px; /* Position above the middle bar */
+}
+
+.navbar-toggler-icon::after {
+    bottom: -8px; /* Position below the middle bar */
+}
+
+/* Change color when toggler is clicked */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: transparent; /* Hide the middle line on click */
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+    transform: rotate(45deg); /* Rotate top bar */
+    top: 0; /* Align with middle */
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::after {
+    transform: rotate(-45deg); /* Rotate bottom bar */
+    bottom: 0; /* Align with middle */
+}
+
 
 .navbar-primary .navbar-brand {
     height: 75px;
@@ -639,95 +692,94 @@ button {
     position: relative;
 }
 .navbar-brand img {
-    width: 60px;
-    height: 60px;
-}
-.navbar-toggler-icon {
-    width: 30px; /* Adjust the width of the hamburger icon */
-    height: 30px; /* Adjust the height of the hamburger icon */
-    background-color: #d54c4c;
-    background-repeat: no-repeat;
-    background-size: contain; /* Ensures the SVG scales properly */
-    background-position: center; /* Centers the icon within the button */
-   
-
-    
+    width: 100px;
+    height: 90px;
+    margin-top:12px ;
 }
 
- body {
-            font-family: Arial, sans-serif;
-        }
 
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            align-items: center;
-            justify-content: center;
-            z-index: 1000000; /* Ensure it's on top */
-        }
 
-        .content1 {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 600px;
-            position: relative;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+/* Ensure the modal is hidden by default */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10000;
+}
 
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            font-size: 20px;
-            color: #fe0606;
-        }
+.content1 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fe0606;
+}
 
-        label {
-            margin: 10px 0 5px;
-            display: block;
-            font-weight: bold;
-        }
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
 
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+label {
+    margin: 10px 0 5px;
+    display: block;
+    font-size: 0.9rem;
+}
 
-        .error-message {
-            color: red;
-            font-size: 0.875em;
-            display: none; /* Hidden by default */
-            margin: 0 0 10px;
-        }
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
 
-        button {
-           align-items: center;
-            padding: 10px;
-            background: #ee6262e3 ;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ee6262e3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-        button:hover {
-            background:#DA1B40;
-        }
+button:hover {
+    background-color: #fd3c3ce3;
+}       
+
+.property-item {
+    position: relative; /* Allows positioning of child elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns items at the start */
+    height: 100%; /* Makes the item take full height */
+}
+
+.download-btn {
+    position: absolute; /* Allows placement at the bottom */
+    bottom: 10px; /* Position from the bottom */
+   /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    margin-top: 50%;
+}
