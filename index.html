@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8">
-    <title>Corporate Orders</title>
+    <title>Event Space</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="//sweet16.store/cdn/shop/files/Sweet-16_Logo.png?crop=center&height=32&v=1705648402&width=32" rel="icon">
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
-
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -24,10 +23,40 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/style.css"rel="stylesheet">
-    <link href="css/bootstrap.min.css"rel="stylesheet">
 
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* External CSS: flickity.css */
+      
+    
+        .gallery {
+          background: #EEE;
+          margin: 0 auto;
+          width: 90%;
+        margin-bottom: 10px;         
+        }
+    
+        .gallery-cell {
+        
+          margin-right: 10px;
+          background: #8C8;
+          display: flex;
+          justify-content: center;
+        }
+    
+        .gallery-cell img {
+          display: block;
+          width: 400px;
+          height:auto;
+          object-fit: cover; /* Ensure the image fits nicely within the cell */
+        }
+      </style>
+      <!-- Flickity CSS -->
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -41,585 +70,569 @@
         <!-- Spinner End -->
 
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" style="background-color: #3A0357;">
-                <a href="" class="navbar-brand p-0">
-                    
-                    <img src="//sweet16.store/cdn/shop/files/Sweet-16-white.png?v=1712864857&width=100" alt="Logo">
-                    
-                    
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars" style="color: white;"></span>
-                    
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        
-                   
-                        <a href="Product.html" class="nav-item nav-link">Product</a>     
-                    </div>
-                    <a href="" class="btn btn-secondary py-2 px-4 ms-3">Enquire Now</a>
-                </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5">
-                        <div class="col-lg-6 pt-5 text-center text-lg-start">
-                            <h1 class="display-4 text-white mb-4 animated slideInLeft">Corporate Gifting with Sweet16 </h1>
-                            <p class="text-white animated slideInLeft">Show your love with Sweet16's delectable Mysore Pak! Celebrate special moments with employees, partners, and clients, making every occasion memorable with a sweet treat they'll cherish. </p>
-                            <h1 class="text-white mb-4 animated slideInLeft">
-                                <!-- <small class="align-top fw-normal" style="font-size: 15px; line-height: 25px;">Starting:</small>
-                                <span>$2.49</span>
-                                <small class="align-bottom fw-normal" style="font-size: 15px; line-height: 33px;">/ Mo</small> -->
-                            </h1>
-                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Enquire Now</a>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid animated zoomIn" src="img/Mysurpa Single/Ghee Mysore Pak PNG (1).png" alt="">
-                        </div>
-                    </div>
-                </div>
+        <!-- Navbar Start -->
+         
+      
+<div class="container-fluid nav-bar bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-primary py-0 px-4 bg-white">
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+            <div class="p-2 me-2">
+                <img src="img/lanai anggun (1).jpg" alt="Brand Logo">
             </div>
-        </div>
-        <!-- Navbar & Hero End -->
-
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
-
+          
+        </a>
         
-        <!-- Team Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Perfect for Every Occasion </h1>
-                    <p class="mb-1">Our sweets are ideal for: </p>
+        <!-- Hamburger button -->
+        <button  style="width: 100px;  margin: 0; hover:none;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="service.html" class="nav-link">Service</a>
+                </li>
+            </ul>
+            <a href="#popup-box" class="openPopupLink btn btn-dark px-3 d-none d-lg-flex ms-lg-3">Book Now</a>
+        </div>
+    </nav>
+</div>
+        
+        
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <h3 class="display-6 animated fadeIn mb-4"> Kami Mencipta Momen Istimewa Anda
+                    </h3>
+                    <p class="animated fadeIn mb-4 pb-2">Pengurusan majlis profesional untuk perkahwinan, akad nikah, dan sambutan hari lahir. Sentuhan peribadi, lokasi eksklusif, dan perkhidmatan lengkap untuk majlis yang sempurna.
+                    </p>
+                    <a href="#popup-box" class=" openPopupLink btn btn-dark py-3 px-5 me-3 animated fadeIn">Ketahui Lebih Lanjut</a>
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                               
-                                <h5 class="fw-bold mb-1">Employee Appreciation Gifts </h5>
-                                <br>
-                               
-                            </div>
-                            <!-- <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div> -->
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/malay wall.jpg" alt="" style="height: 711px;">
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                              
-                                <h5 class="fw-bold mb-1">Client and Partner Thank-You Gifts </h5>
-                                <br>
-                             
-                            </div>
-                            <!-- <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                        
-                                <h5 class="fw-bold mb-1">Festival Gifting (Diwali, New Year, Christmas) </h5>
-                                
-                            </div>
-                            <!-- <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
-                            <div class="text-center p-4">
-                                
-                                <h5 class="fw-bold mb-1">Corporate Events & Conferences </h5>
-                                <br>
-                               
-                            </div>
-                            <!-- <div class="d-flex justify-content-center bg-primary p-3">
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div> -->
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/malay wall.jpg" alt="" style="height: 711px;">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->   
-<div class="imagehover">
-
-        <div class="imghover">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-3">Our Product</h1>
-                <p class="mb-1">Unique Varieties</p>
-            </div>
-          <section class="articles-container">
-            
-            <article>
-              <figure><img class="himg"src="img/Mysurpa Single/Badam.jpg" alt=""></figure>
-              <h4>Badam <br>Mysurpak</h4>
-            
-            </article>
-            <article>
-              <figure><img class="himg" src="img/Mysurpa Single/Carrot.jpg" alt=""></figure>
-              <h4>Carrot<br> Mysurpak</h4>
-              
-            </article>
-            <article>
-              <figure><img class="himg"src="img/Mysurpa Single/Cashew.jpg" alt=""></figure>
-              <h4>Cashew <br>Mysurpak</h4>
-              
-            </article>
-            <article>
-              <figure><img class="himg"src="img/Mysurpa Single/Chilli.jpg" alt=""></figure>
-              <h4>Chilli<br> Mysurpak</h4>
-             
-            </article>
-            <article>
-              <figure><img class="himg" src="img/Mysurpa Single/Crispy.jpg" alt=""></figure>
-              <h4>Crispy<br> Mysurpak</h4>
-              
-            </article>
-            <article>
-              <figure><img class="himg"src="img/Mysurpa Single/Fig.jpg" alt=""></figure>
-              <h4>Fig <br>Mysurpak</h4>
-              
-            </article>
-            <article>
-              <figure><img class="himg" src="img/Mysurpa Single/Ghee.jpg" alt=""></figure>
-              <h4>Ghee <br> Mysurpak</h4>
-           
-            </article>
-            <article>
-                <figure><img class="himg"src="img/Mysurpa Single/Naatu Sakkarai.jpg" alt=""></figure>
-                <h4>Natusakkarai Mysurpak</h4>
-                
-              </article>
-            <article>
-              <figure><img class="himg"src="img/Mysurpa Single/Milk.jpg" alt=""></figure>
-              <h4>Milk <br>Mysurpak</h4>
-              
-            </article>
-            
-            <article>
-              <figure><img class="himg" src="img/Mysurpa Single/Pista.jpg" alt=""></figure>
-              <h4>Pista<br> Mysurpak</h4>
-             
-            </article>
-          </div>
-          </section>
-        </div>
-
-          <!-- Testimonial Start -->
-          <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <h1 style="align-items: center; display: flex;justify-content: center;"> Why Choose Sweet 16 for Your Events or Corporate Gifting? </h1>
-            <div class="container px-lg-5">
-                <br>
-                <br>
-               
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
-                       
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <h6 class="fw-bold mb-1">Exquisite Flavors:</h6>
-                        <p class="mt-3"> Our Mysore Pak and Kaju Katli are made with premium ingredients and crafted to perfection, offering a truly indulgent experience in every bite. </p>
-                        <div class="d-flex align-items-center">
-                          
-                            <div class="ps-3">
-                               
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <h6 class="fw-bold mb-1">Custom Packaging:</h6>
-                        <p class="mt-3">Add a personal touch with customized packaging, making your gifts stand out. </p>
-                        <br>
-                        <br>
-                        <div class="d-flex align-items-center">
-                            
-                            <div class="ps-3">
-                                
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <h6 class="fw-bold mb-1">Fresh & Fast Delivery: </h6>
-                        <p class="mt-3">Our sweets are freshly made and delivered to ensure your corporate gifts arrive on time and in perfect condition. </p>
-                        <br>
-                        
-                        <div class="d-flex align-items-center">
-                            
-                            <div class="ps-3">
-                                
-                               
-                            </div>
-                        </div>
-                    </div>
+        <!-- Header End -->
 
 
-                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <h6 class="fw-bold mb-1">Bulk Discounts: </h6>
-                        <p class="mt-3">Enjoy up to [15%] off on bulk orders above 100 boxes. Special festive rates are available for occasions like Diwali, New Year, and more. </p>
-                        <div class="d-flex align-items-center">
-                           
-                            <div class="ps-3">
-                              
-                              
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 mt-4">
-                        <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                        <h6 class="fw-bold mb-1">Special Event Services:</h6>
-                        <p class="mt-3"> Whether it’s birthdays, weddings, or any other special occasion, we supply premium sweets that add a memorable, sweet touch to your celebration. </p>
-                        <div class="d-flex align-items-center">
-                          
-                            <div class="ps-3">
-                              
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-          <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
+       
+         
+
+        <!-- About Start -->
+        
+        <div  class="container-xxl py-5">
+            <div  class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-4">
-                            <h1 class="mb-2">What Our Clients Say: </h1>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/malayw.jpg">
                         </div>
-                        <br>
-                        <br>
-                        <h6 class="mb-4">"Sweet 16’s personalized gifts were a hit at our employee gifting event! Everyone loved the flavors, and the custom packaging made it extra special." – Digifyce </h6>
-                       
                     </div>
-                    <figure class="snip1139 active">
-                        <blockquote style="margin-bottom: 20px;">It was very tasty. I sent it to my parents & they loved it. Packing was good too. I really appreciate and applaud the product, its packaging, taste and purity.
-                          <div class="arrow"></div>
-                        </blockquote>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h2 class="mb-4">Selamat Datang ke Lanai Anggun 
+                        </h2>
+                        <p class="mb-4">Kami di sini untuk merealisasikan impian anda dalam mengadakan majlis perkahwinan, akad nikah, atau sambutan hari lahir yang sempurna. Dari perancangan awal sehingga selesai, kami pastikan setiap perincian dijaga rapi untuk mencipta kenangan terindah buat anda dan tetamu.
+                        </p>
+                       
                       
-                        <div class="author"  style="text-align: right;">
-                          <h5 style="color: #E79848;text-align: right;">Ramesh </h5>
-                        </div>
-                    </figure>
-                    <figure class="snip1139">
-                        <blockquote style="margin-bottom: 20px;">I have never had a better Kaju katli than this one. Just awesome and is surely recommended to every Kaju katli lover. I will definitely order it again. Thank you for the quick delivery.
-                          <div class="arrow"></div>
-                        </blockquote>
-                       
-                        <div class="author"  style="text-align: right;">
-                          <h5  style="color: #E79848;text-align: right;">Lal</h5>
-                        </div>
-                    </figure>
-                    <figure class="snip1139" >
-                        <blockquote style="margin-bottom: 20px;">Sweet16 products are heavenly! The chocolates melt in your mouth, and the pastries are pure bliss. Each treat is a sweet symphony of flavors, a delightful experience!
-                          <div class="arrow"></div>
-                        </blockquote>
-                       
-                        <div class="author" style="text-align: right;">
-                          <h5  style="color: #E79848; text-align: right;">Harsha</h5>
-                        </div>
-                    </figure>
-                
-                    <script src="script.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
+   
         <!-- About End -->
 
 
-        
-        <!-- Comparison Start -->
+        <!-- Category Start -->
         <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Ready to Place Your Order? </h1>
-                    <h4 class="mb-1">It’s easy! </h4>
-                    <br>
-               
-               <p>Just fill out the form below, and our team will get in touch to create a customized package tailored to your needs. Whether you’re ordering 50 or 500, we’ve got you covered! </p>
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                   
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icons8-security-lock-50.png" alt="Icon">
+                                </div>
+                                <h5>Ruang Intim dan Eksklusif </h5>
+                                <br>
+                               
+                                <p>"Lokasi yang direka khas untuk majlis bersama keluarga dan sahabat terdekat, menawarkan suasana mesra dan peribadi."
+                                </p>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/fam frnds dining.png" alt="Icon">
+                                </div>
+                                <h5>Sajian Mesra Keluarga </h5>
+                                <br>
+                                <br>
+                                
+                                <p>Hidangan disesuaikan untuk dinikmati bersama keluarga, disediakan oleh chef profesional dengan kualiti tinggi.
+
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Flexible Packages for Small Events.png" alt="Icon">
+                                </div>
+                                <h5>Pakej Fleksibel untuk Majlis Kecil  </h5>
+                                  <br>
+                                  
+                                <p>Pakej perkahwinan disusun khas untuk memenuhi keperluan majlis yang lebih kecil tetapi tetap eksklusif.
+
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/Full Amenities for Guest Comfort.png" alt="Icon">
+                                </div>
+                                <h5>Kemudahan Penuh untuk Keselesaan Tetamu </h5>
+                                
+                                <p>Fasiliti lengkap, dari tempat letak kenderaan, tandas, hingga ruang surau, semuanya disediakan untuk keselesaan tetamu anda.
+
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                   
+                </div>
             </div>
         </div>
-        <!-- Comparison Start -->
+        <!-- Category End -->
 
-
+          
+        <!-- About Start -->
         
+        <div class="container-xxl py-5">
+            <div id="About us" class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/thums.jpg" style="width: 500px;height: 500px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h2 class="mb-4">Lokasi Kami
+                        </h2>
+                        <p class="mb-4">Terletak di Taman Wahyu yang meriah, Kuala Lumpur, Eco Sky dikelilingi oleh kejiranan yang matang serta kemudahan yang sedia ada. Lokasinya di Jalan Sultan Azlan Shah memudahkan akses melalui MRR2, LDP, Lebuhraya NKVE, DUKE, dan Lebuhraya GUTHRI
+                        </p>
+                        <a href="#popup-box" class="openPopupLink btn btn-dark px-3  ms-lg-3 text-center" style="width: 120px;">Book Now</a>
+                    </div>
+                
+                </div>
+            </div>
+        </div> 
+    
+        <!-- About End -->
+
+
+         <!-- About Start -->
+         <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <!-- Text and button on the right, image on the left -->
+                    <div class="col-lg-6 order-lg-1 order-2 wow fadeIn text-end" data-wow-delay="0.5s">
+                        <h2 class="mb-4">Perkhidmatan Kami</h2>
+                        <p class="mb-4">Anda tak perlu bimbang tentang mengurus pelbagai vendor. Dari perkahwinan yang indah hingga acara korporat yang elegan, setiap pakej kami merangkumi semua keperluan anda. Lanai Anggun adalah one-stop solution. Anda boleh menguruskan acara anda tanpa sebarang kerumitan, kerana semua perancangan dan persediaan diuruskan dengan sempurna oleh pasukan profesional kami.</p>
+                        <a href="service.html" class="btn btn-dark px-3  ms-lg-auto text-center" style="width: 110px;">Lihat Lagi</a>
+                    </div>
+                    <div class="col-lg-6 order-lg-2 order-1 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                            <img class="img-fluid w-100" src="img/malayw.jpg" alt="Lanai Anggun">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    <!-- About End -->
+
+
+
+        <!-- Call to Action Start -->
+        <section id="about" >
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(235, 121, 121, 0.3)">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="img/malay wallpaper.jpg" alt="">
+                            </div>
+                           
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                
+                                <div class="mb-4">
+                                    
+                                    <h2 class="mb-3">Mengenai Kami
+                                    </h2>
+                                    <p>Kami adalah pasukan yang berdedikasi dalam menyediakan perkhidmatan pengurusan acara yang unggul. Dengan pengalaman bertahun-tahun dan kecekapan profesional, kami membantu menghidupkan setiap acara mengikut cita rasa dan keinginan anda. Kami bangga dengan hasil kerja kami yang berkelas tinggi dan kepuasan pelanggan.
+                                    </p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Call to Action End -->
 
 
      
 
-       
 
-       
-
-
-
-      
-
-
-
-   <!-- Domain Search Start -->
-   <div class="container-xxl domain mb-5" style="margin-top: 90px;">
-    <div class="container px-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                   
-                    <h2 class="mb-1">Don’t wait—sweeten your events with Sweet 16 today! </h2>
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h2 class="mb-3">Mengapa Pilih Kami?</h2>
                 </div>
-               <h5>Contact us now for a custom quote and special bulk discounts. Let us help you create unforgettable moments with our delightful sweets. </h5>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4 d-flex align-items-center justify-content-center flex-column">
+                             
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Lokasi Eksklusif:</h6>
+                                    <small>Pilihan tempat acara yang memukau, sesuai untuk setiap jenis majlis.</small>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4 d-flex align-items-center justify-content-center flex-column">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Perkhidmatan Profesional:</h6>
+                                    <small>Pasukan kami terdiri daripada perancang acara profesional yang memastikan semuanya berjalan lancar.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4 d-flex align-items-center justify-content-center flex-column">
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Rekaan Majlis Terkini:</h6>
+                                    <small>Kami mengikuti trend terkini untuk memberikan sentuhan moden dan elegan kepada acara anda.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Domain Search End -->
+        
+        <!-- Testimonial End -->
 
-<div class="container-xxl domain mb-5" style="margin-top: 90px;">
-    <div class="container px-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                   <div class="btn2">
-                    <a href="" class="btn btn-secondary py-2 px-4 ms-3">Enquire Now</a>
-                </div>
-                </div>
-              
+        
+  <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+    <div class="gallery-cell">
+      <img src="img/IMG_3032.PNG" alt="Image 1">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3033.PNG" alt="Image 2">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3057.PNG" alt="Image 3">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3035.PNG" alt="Image 4">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3036.PNG" alt="Image 5">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3045.PNG" alt="Image 6">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3047.PNG" alt="Image 7">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3033.PNG" alt="Image 8">
+    </div>
+    <div class="gallery-cell">
+      <img src="img/IMG_3066.PNG" alt="Image 9">
+    </div>  
+    <div class="gallery-cell">
+      <img src="img/IMG_3070.PNG" alt="Image 10">
+    </div>
+  </div>
+
+        <div class="video-gallery">
+            <div class="video-item" onclick="playVideo(this, 'video/5532772-uhd_4096_2160_25fps.mp4')">
+                <img src="img/Untitled (Your Story).png" alt="Video 1 Thumbnail">
+                <video controls>
+                    <source src="video/5532772-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item" onclick="playVideo(this, 'video/5532772-uhd_4096_2160_25fps.mp4')">
+                <img src="img/Untitled (Your Story).png" alt="Video 2 Thumbnail">
+                <video controls>
+                    <source src="video/5532772-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item" onclick="playVideo(this, 'video/5532772-uhd_4096_2160_25fps.mp4')">
+                <img src="img/Untitled (Your Story).png" alt="Video 3 Thumbnail">
+                <video controls>
+                    <source src="video/5532772-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item" onclick="playVideo(this, 'video/5532772-uhd_4096_2160_25fps.mp4')">
+                <img src="img/Untitled (Your Story).png" alt="Video 4 Thumbnail">
+                <video controls>
+                    <source src="video/5532772-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
-    </div>
-</div>
-
-
         
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row gy-5 gx-4 pt-5" style="display: flex;">
-                   
-                    <div class="col-lg-5 col-md-12">
-                        <div class="row gy-5 g-4">
-                            <div class="col-md-6">
-                                <h5 class="fw-bold text-white mb-4">Quick Links</h5>
-                                <a class="btn btn-link" href="">Home</a>
-                                <a class="btn btn-link" href="">About</a>
-                                <a class="btn btn-link" href="">product</a>
-                                <a class="btn btn-link" href=""> contact us</a>
-                              
-                            </div>
-                            <div class="col-md-6" style="align-items: center;">
-                                <h5 class="fw-bold text-white mb-4">Our Services</h5>
-                                <a class="btn btn-link" href="">Corporate Events</a>
-                                <a class="btn btn-link" href="">Birthday Celebrations</a>
-                                <a class="btn btn-link" href="">Weddings</a>
-                                <a class="btn btn-link" href="">Private Parties</a>
-                                <a class="btn btn-link" href="">Workshops</a>
-                            </div>
-                        </div>
+       
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5 justify-content-center text-center"> <!-- Center the row and text -->
+                    <div class="col-lg-3 col-md-6">
+                        <img src="img/lanai anggun.png" style="width: 100px; ">
+                        <br><br>
+                        
+                        <h5 class="text-white mb-4">Follow Us</h5>
+                        <div class="d-flex justify-content-center pt-2"> <!-- Center the social icons -->
+                        
+                            <a class="btn btn-outline-light btn-social mx-2" href="https://www.facebook.com/profile.php?id=100056417901302"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-2" href="https://www.instagram.com/lanaianggunecosky/?hl=en"><i class="fab fa-instagram"></i></a>
+                        </div>    
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
-                     
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>9363716160</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i> sweet16cbe@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center"> <!-- Center the column -->
+                        <h5 class="text-white mb-4 text-center">Address</h5> <!-- Center the heading -->
+                        <p class="text-white">Lot 21-2 Ecosky, Jln Kuching, Taman Wahyu, 51200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>
                     </div>
-                   
+                    
+                    <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center"> <!-- Center the column -->
+                        <h5 class="text-white mb-4 text-center">Quick Links</h5> <!-- Center the heading -->
+                        <a class=" btn-link text-white d-block text-center" href="">Home</a>
+                        <a class=" btn-link text-white d-block text-center" href="#about">About Us</a>
+                        <a class=" btn-link text-white d-block text-center" href="">Service</a>
+                        <a class=" btn-link text-white d-block text-center" href="">Contact</a>
+                    </div>
                 </div>
             </div>
-            
-            
+          
         </div>
+        
         <!-- Footer End -->
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        <a href="#" class="btn  btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
+    <!-- Modal -->
+    <div id="popup-box" class="modal">    
+        <div class="content1">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h1>Get In Touch</h1>
+            <form class="needs-validation" method="post" id="popup-form" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" name="Name" required>
+                <span class="error-message" id="name-error">Please enter your name.</span>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email" name="Email" required>
+                <span class="error-message" id="email-error">Please enter a valid email address.</span>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter Your Phone Number" name="Mobile" minlength="10" maxlength="10" required>
+                <span class="error-message" id="phone-error">Please enter a valid phone number with 10 digits.</span>
+
+                <label for="date">Event Date</label>
+                <input type="date" id="date" name="eventdate" required>
+
+        
+                <label for="eventType">Event Type</label>
+                <select id="eventType" name="EventType" required>
+                    <option value="" disabled selected>Select Event Type</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Celebration">Celebration</option>
+                </select>
+
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('popup-box');
+        const closeModal = document.getElementById('closeModal');
+        const openPopupLinks = document.querySelectorAll('.openPopupLink');
+
+        // Open the modal
+        openPopupLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default anchor link behavior
+                modal.style.display = 'flex';
+            });
+        });
+
+        // Close the modal
+        closeModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.style.display = 'none';
+        });
+
+        // Optional: Close modal when clicking outside of the content
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Form validation
+        const form = document.getElementById('popup-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            // Clear previous error messages
+            document.querySelectorAll('.error-message').forEach(msg => msg.style.display = 'none');
+
+            // Validate name
+            const name = document.getElementById('name');
+            if (!name.value.trim()) {
+                document.getElementById('name-error').style.display = 'block';
+                isValid = false;
+            }
+
+            // Validate email
+            const email = document.getElementById('email');
+            if (!email.validity.valid) {
+                document.getElementById('email-error').style.display = 'block';
+                isValid = false;
+            }
+
+            // Validate phone
+            const phone = document.getElementById('phone');
+            if (!phone.value.trim() || phone.value.length !== 10) {
+                document.getElementById('phone-error').style.display = 'block';
+                isValid = false;
+            }
+
+            // If the form is valid, submit
+            if (isValid) {
+                const formData = new FormData(form);
+                try {
+                    const response = await fetch("https://script.google.com/macros/s/AKfycbxTZITb-PHElvMwhsI0rBkjDkaKXYcGfdchvGzarrfURx_8TqS016FXUMTCrLzK0PF17A/exec", {
+                        method: 'POST',
+                        body: formData
+                    });
+                    const data = await response.json();
+                    if (data.result === "success") {
+                        form.reset();
+                        window.location.href = 'thankyou.html';
+                    } else {
+                        alert('Submission failed. Please try again.');
+                    }
+                } catch (error) {
+                    alert('An error occurred: ' + error.message);
+                }
+            }
+        });
+    });
+
+    function playVideo(videoItem, videoSrc) {
+    // Pause and hide all videos
+    document.querySelectorAll('.video-item').forEach(item => {
+        const video = item.querySelector('video');
+        if (video) {
+            video.pause();
+            video.style.display = 'none'; // Hide video
+            video.removeAttribute('src'); // Reset video source to ensure proper loading
+            item.classList.remove('playing');
+        }
+    });
+
+    // Show and play the selected video
+    const selectedVideo = videoItem.querySelector('video');
+    const thumbnail = videoItem.querySelector('img');
+
+    if (selectedVideo) {
+        selectedVideo.style.display = 'block'; // Show video
+        selectedVideo.src = videoSrc; // Set new video source
+        selectedVideo.load(); // Reload the video to update the source
+        selectedVideo.play(); // Start playing the video
+        videoItem.classList.add('playing');
+    }
+}
+    
+    </script>
+
+
+     
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Flickity JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        (function ($) {
-    "use strict";
-
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
-
-
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.navbar').addClass('sticky-top shadow-sm');
-        } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
-        }
-    });
-    
-    
-    // Dropdown on mouse hover
-    const $dropdown = $(".dropdown");
-    const $dropdownToggle = $(".dropdown-toggle");
-    const $dropdownMenu = $(".dropdown-menu");
-    const showClass = "show";
-    
-    $(window).on("load resize", function() {
-        if (this.matchMedia("(min-width: 992px)").matches) {
-            $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
-            );
-        } else {
-            $dropdown.off("mouseenter mouseleave");
-        }
-    });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
-
-
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        margin: 25,
-        dots: true,
-        loop: true,
-        center: true,
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
-    });
-    
-})(jQuery);
-
-let currentIndex = 0;
-const testimonials = document.querySelectorAll('figure.snip1139');
-const totalTestimonials = testimonials.length;
-
-function showNextTestimonial() {
-    testimonials[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % totalTestimonials;
-    testimonials[currentIndex].classList.add('active');
-}
-
-setInterval(showNextTestimonial, 3000); // Change testimonial every 3 seconds
-
-    </script>
 </body>
 
 </html>
