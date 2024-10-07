@@ -34,11 +34,34 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <style>Lanai.png
+    <style>
         /* External CSS: flickity.css */
         
-      
-    
+     /* Remove default bullets */
+li {
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  position: relative; /* Required for custom bullet positioning */
+}
+
+/* Custom bullets using ::before */
+.custom-list li::before {
+  content: '\2022'; /* Unicode for a bullet symbol */
+  font-size: 20px;  /* Size of the bullet */
+  color: #ff6347;   /* Bullet color (Tomato) */
+  position: absolute;
+left: -10px;
+}
+
+/* Styling the list items */
+.custom-list li {
+
+
+}
+
+  
         .gallery {
           background: #EEE;
           margin: 0 auto;
@@ -83,7 +106,7 @@
     <nav class="navbar navbar-expand-lg navbar-primary py-0 px-4 bg-white">
         <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
              <div class="p-2 me-2">
-                <img src="img/Lanai Angunn - f37170 BOLD.png" alt="Brand Logo" style="height: 200px;width: 200px;margin: -10px;">
+                <img src="img/Lanai Angunn - f37170.png" alt="Brand Logo" style="height: 200px;width: 200px;margin: -10px;">
             </div>
           
         </a>
@@ -118,11 +141,14 @@
         <div class="container-fluid header bg-white p-0">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div class="col-md-6 p-5 mt-lg-5">
-                    <h3>Di Lanai Anggun, Kami Memiliki Konsep Yang Berlainan Daripada Tempat-Tempat Perkahwinan Yang Lain Kerana Kami Mempunyai Pelbagai Ruang</h3>
+                    <h4>Disini Bermula Terciptanya Memori Terindah</h4>
+                     <br>
+                  
+                    <h6>Di Lanai Anggun, Kami Memiliki Konsep Yang Berlainan Daripada Tempat-Tempat Perkahwinan Yang Lain Kerana Kami Mempunyai Pelbagai Ruang</h6>
                     <br>
-                    <h4>Lanai Anggun Mempunyai 5 Ruang (Event Space) Yang Berlainan :</h4>
+                    <h6>Lanai Anggun Mempunyai 5 Ruang (Event Space) Yang Berlainan :</h6>
                     <br>
-                    <ul style="list-style-type: disc; margin-left: 20px;">
+                    <ul class="custom-list" style="list-style-type: disc; margin-left: 20px;">
                         <li>Ruang Chanteq (Ruang Sanding/ Utama)</li>
                         <li>Ruang Juwita (Ruang Makan Tambahan Dilengkapi 2 “Live Screen”)</li>
                         <li>Foyer (Ruang Makan Outdoor Dilengkapi Dengan Patio Putih & Fairy Light)</li>
@@ -160,10 +186,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        
                         <h2 class="mb-4">Selamat Datang Ke Lanai Anggun At Ecosky, Kuala Lumpur</h2>
                         <p class="mb-4">Lanai Anggun Menyediakan Perkhidmatan Yang Cekap & Profesional Dengan Lokasi Yang Strategik Dan Pakej Yang Lengkap Untuk Setiap Majlis Seperti :
                         </p>
-                       <ul style="list-style-type: disc; margin-left: 20px;">
+                       <ul class="custom-list"  style="list-style-type: disc; margin-left: 20px;">
                         <li>Majlis Perkahwinan</li>
                         <li>Majlis Pernikahan</li>
                         <li>Majlis Pertunangan</li>
@@ -178,6 +205,7 @@
                 </div>
             </div>
         </div>
+        <h4 style="text-align: center;">Mahukan Majlis Yang  Minimalist & Santai Tetapi Nampak  Eksklusif & Moden?</h4>
    
         <!-- About End -->
 
@@ -272,7 +300,7 @@
                         <p class="mb-4">Lanai Anggun Terletak Di Lot 20,21,22,23  Tingkat 2, Ecosky Commercial, Kuala Lumpur.
                         </p>
                         <h4>Ecosky (Ecoworld):</h4>
-                        <ul style="list-style-type: disc; margin-left: 20px;">
+                        <ul class="custom-list"style="list-style-type: disc; margin-left: 20px;">
                             <li>Kemudahan Sedia Ada Seperti Surau Dan Tandas </li>
                             <li>Hiasan Landskap Yang Indah Dan Cantik </li>
                             <li>Dikelilingi Kedai-Kedai Seperti Super Value Mart, Kk Mart, Zus Coffee, Anytime Fitness, Dll</li>
@@ -281,7 +309,7 @@
 
                         </ul>
                         <p>Lokasi Ecosky Adalah Di Jalan Kuching, Kuala Lumpur Yang Mane Lokasinya Strategik Dan Mudah Diakses Melalui:</p>
-                        <ul style="list-style-type: disc; margin-left: 20px;">
+                        <ul class="custom-list"style="list-style-type: disc; margin-left: 20px;">
                             <li>Mrr2</li>
                             <li>Duke</li>
                             <li>Lebuhraya Nkve</li>
@@ -323,7 +351,7 @@
                                     </p>
                                     <p>Lanai Anggun Telah Menguruskan Lebih 1000 Majlis Dalam Tempoh 2016 Sehingga 2024.</p>
                                     <h4>Lanai Anggun Pernah Memberi Khidmat Untuk Menguruskan Majlis-Majlis Seperti:</h4>
-                                    <ul style="list-style-type: disc; margin-left: 20px;">
+                                    <ul class="custom-list" style="list-style-type: disc; margin-left: 20px;">
                                     <li>Majlis Perkahwinan Anak Perempuan Arwah Datuk Seri Salahuddin Ayub</li>
                                     <li>Majlis Sambutan Hari Lahir Kamal Adli Dan Fanclub</li>
                                     <li>Majlis Pertunangan Dan Majlis Gender Reveal Ayie Floor 88 & Tasya</li>
@@ -350,7 +378,7 @@
 
      
 
-
+      
         <!-- Testimonial Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -399,7 +427,11 @@
         </div>
         
         <!-- Testimonial End -->
-
+         
+<br>
+<h4 style="text-align: center;">Anggun Adalah Pilihan Yang Tepat </h4>
+<br>
+<br>
         
   <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
     <div class="gallery-cell">
@@ -433,7 +465,10 @@
       <img src="img/IMG_3070.PNG" alt="Image 10">
     </div>
   </div>
-
+  
+<br>
+<br>
+<h4 style="text-align: center;">Konsep Di Lanai Anggun Adalah Santai & Minimalist  Dengan Dekorasi Yang Eksklusif & Moden </h4>
         <div class="video-gallery">
             <div class="video-item" onclick="playVideo(this, 'video/5532772-uhd_4096_2160_25fps.mp4')">
                 <img src="img/Untitled (Your Story).png" alt="Video 1 Thumbnail">

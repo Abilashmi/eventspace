@@ -29,6 +29,24 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        li {
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  position: relative; /* Required for custom bullet positioning */
+}
+
+/* Custom bullets using ::before */
+.custom-list li::before {
+  content: '\2022'; /* Unicode for a bullet symbol */
+  font-size: 20px;  /* Size of the bullet */
+  color: #ff6347;   /* Bullet color (Tomato) */
+  position: absolute;
+left: -10px;
+}
+    </style>
 </head>
 
 <body>
@@ -48,7 +66,7 @@
     <nav class="navbar navbar-expand-lg navbar-primary py-0 px-4 bg-white">
         <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
             <div class="p-2 me-2">
-               <img src="img/Lanai Angunn - f37170 BOLD.png" alt="Brand Logo" style="height: 200px;width: 200px;margin: -10px;">
+                <img src="img/Lanai Angunn - f37170.png" alt="Brand Logo" style="height: 200px;width: 200px;margin: -10px;">
             </div>
           
         </a>
@@ -84,7 +102,7 @@
             <h3 class="display-6 animated fadeIn  mt-5">Perkhidmatan Lanai Anggun</h3><br>
             <p class="animated fadeIn mb-4 pb-2"> Lanai Anggun Merupakan One Stop Center Untuk Majlis Anda. </p>
             <p>Setiap Pakej Yang Disediakan Telah Merangkumi Kesemua Keperluan Yang Bersesuaian Untuk Setiap Majlis Seperti:</p>
-            <ul style="list-style-type: disc; margin-left: 20px;" >
+            <ul class="custom-list" style="list-style-type: disc; margin-left: 20px;" >
                 <li>Hiasan Dalaman Yang Eksklusif Dan Moden</li>
                 <li>Lebih 20 Pilihan Design Pelamin Yang Boleh Dipilih</li>
                 <li>Makanan Menu Utama Berserta Pramusaji</li>
@@ -162,7 +180,7 @@
                             <img class="img-fluid" src="img/icons8-video-camera-50.png" alt="Icon">
                         </div>
                         <h6>	Dekorasi Dan Susun Atur</h6>
-                        <p>Dekorasi ruang majlis yang EKSKLUSIF & MODEN sesuai untuk dipadankan dengan pelbagai tema majlis. Susun atur ruang majlis yang MODEN & MINIMALIST memberikan keselesaan kepada tetamu..</p>
+                        <p>Dekorasi ruang majlis yang EKSKLUSIF & MODEN sesuai untuk dipadankan dengan pelbagai tema majlis. Susun atur ruang majlis yang MODEN & MINIMALIST memberikan keselesaan kepada tetamu.</p>
                         <br>
                        
                     </div>
@@ -224,7 +242,7 @@
     <div class="col-md-6 p-5 mt-lg-5 mx-auto"> <!-- Added mx-auto to center the column -->
         <h2 class="display-6 animated fadeIn mb-4">Pakej Lengkap Lanai Anggun</h2>
         <p>Lanai Anggun Menyediakan Pelbagai Pakej Lengkap Dengan Bilangan Jemputan Yang Berbeza (50pax Sehingga 1000pax) Untuk Setiap Majlis:</p>
-        <ul style="list-style-type: disc; margin-left: 50px;text-align:left;">
+        <ul class="custom-list"style="list-style-type: disc; margin-left: 50px;text-align:left;">
             <li>Pakej Lengkap Sanding 100pax, 300pax,500pax,800pax,1000pax</li>
             <li>Pakej Lengkap Nikah 100pax, 300pax ,500pax</li>
             <li>Pakej Premium Nikah & Sanding 500pax,800pax</li>
@@ -267,7 +285,7 @@
                                             <a class="d-block h5 mb-2" href="">Pakej Lengkap Sanding</a>
                                             <br>
                                             
-                                            <ul style="list-style-type: disc; margin-left: 20px; text-align: left;">
+                                            <ul class="custom-list" style="list-style-type: disc; margin-left: 20px; text-align: left;">
                                                 <li>Ruang Majlis (Indoor & Outdoor)</li>
                                                 <li>Dekorasi ruang majlis yang eksklusif</li>
                                                 <li>20 pilihan pelamin</li>
@@ -298,7 +316,7 @@
                                             <a class="d-block h5 mb-2" href="">Pakej Akikah</a>
                                             <br>
                                             
-                                            <ul style="list-style-type: disc; margin-left: 20px; text-align: left;">
+                                            <ul class="custom-list"style="list-style-type: disc; margin-left: 20px; text-align: left;">
                                                 <li>Ruang Majlis (Indoor)</li>
                                                 <li>Dekorasi ruang majlis yang eksklusif</li>
                                                 <li>Pelamin Berendoi (pelamin sedia ada)</li>
@@ -327,7 +345,7 @@
                                             <a class="d-block h5 mb-2" href="">Pakej Majlis Korporat</a>
                                             <br>
                                             
-                                            <ul style="list-style-type: disc; margin-left: 20px; text-align: left;">
+                                            <ul class="custom-list" style="list-style-type: disc; margin-left: 20px; text-align: left;">
                                                 <li>Ruang Majlis (Indoor)</li>
                                                 <li>Dekorasi Ruang Majlis Yang Eksklusif</li>
                                                 <li>VIP Holding Room</li>
@@ -359,7 +377,7 @@
                                             <a class="d-block h5 mb-2" href="">Pakej Lengkap Nikah</a>
                                             <br>
                                             
-                                            <ul style="list-style-type: disc; margin-left: 20px; text-align: left;">
+                                            <ul class="custom-list" style="list-style-type: disc; margin-left: 20px; text-align: left;">
                                                 <li>Ruang Majlis (Indoor & Outdoor Foyer)</li>
                                                 <li>Dekorasi ruang majlis yang eksklusif</li>
                                                 <li>20 pilihan pelamin</li>
@@ -395,7 +413,7 @@
                                         <div class="p-4 pb-0 text-center"> <!-- Centered text and button -->
                                             <a class="d-block h5 mb-2" href="">Pakej Hari Lahir / Doa Selamat / Gathering</a>
                                             <br>
-                                            <ul style="list-style-type: disc; margin-left: 20px; text-align: left;">
+                                            <ul class="custom-list" style="list-style-type: disc; margin-left: 20px; text-align: left;">
                                                 <li>Ruang Majlis (Indoor)</li>
                                                 <li>Dekorasi ruang majlis yang eksklusif</li>
                                                 <li>Dekorasi balon (mengikut tema majlis)</li>
@@ -421,7 +439,7 @@
                                             <br>
                                             
                                             <!-- Bullet points list -->
-                                            <ul style="list-style-type: disc; margin-left: 20px; text-align: left;">
+                                            <ul class="custom-list"style="list-style-type: disc; margin-left: 20px; text-align: left;">
                                                 <li>Dekorasi Ruang Majlis Yang Eksklusif</li>
                                                 <li>Pelamin Nikah (Sedia Ada)</li>
                                                 <li>Pelamin Sanding (20 Pilihan Pelamin)</li>
